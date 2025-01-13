@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'Mclaren';
+    src: url(/Asset/fonts/McLaren-Regular.ttf);
+}
+@font-face {
+    font-family: 'Montserrat' ;
+    src: url(/Asset/fonts/Montserrat-Regular.ttf);
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    font-size: 2rem;
+    font-family: Montserrat;
+}
+.flux{
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Start header */
+.header{
+    width: 100%;
+    height: 8vh;
+    background-color: #003049;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    font-family: Mclaren;
+    color: white;
+    margin-left: 1rem;
+    width: 40%;
+}
+.header_nav{
+    font-family: Montserrat;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.header_list{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+}
+/* end header */
+li a{
+    color: white;
+}
+li a:hover{
+    color: red;
+}
+.hero_title{
+    font-size: 3.5rem;
+    font-family: Mclaren;
+    color: white;
+    
+}
+
+h3{
+    text-align: center;
+    text-decoration: underline;
+    color: #C1121F;
+    font-size: 2.7rem;
+    font-family: Montserrat, sans-serif;
+}
+.hero{
+    width: 100%;
+    height: 60rem;
+    text-align: center;
+    padding: 20px;
+    background-image: url(/Asset/images/bigtitle.jpg);
+    background-size: cover;
+    background-color: #0005;
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    width: 100%;
+    height: 7vh;
+    background-color: #1E4659;
+    color: white;
+    font-family: Mclaren;
+    display: flex;
+    flex-direction: row;;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer_list{
+display: flex;
+gap: 3rem;
+}
+
+table {
+border-collapse: collapse;
+border : 2px solid rgb(200,200,200);
+letter-spacing: 1px;
+font-size: 2rem;
+width: 100%;
+margin: 2rem;
+}
+
+td, th {
+border: 1px solid rgb(190,190,190);
+padding: 10px 20px;
+}
+
+th {
+background-color:#1E4659;
+color: #ef233c;
+}
+
+td {
+text-align: center;
+}
+
+tr:nth-child(even) td {
+background-color: rgb(250,250,250);
+}
+
+tr:nth-child(odd) td {
+background-color: rgb(245,245,245);
+}
+
+.colHeaders {
+  color :red;
+}
+
+caption {
+padding: 10px;
+}
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+    width: 50%;
+  }
+  
+  summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+    background-color: #FDF0D5;
+  }
+  
+  details[open] {
+    padding: 0.5rem;
+  }
+  
+  details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Deux colonnes de largeur égale */
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2rem; /* Espacement de 20 pixels entre les éléments */
+  }
+  
+  /* Style des éléments de la grille */
+  .item {
+    background-color: #e5e5e5; /* Couleur de fond des éléments */
+    padding: 20px; /* Espacement intérieur de 20 pixels */
+  }
+  .game-board {
+    display: grid;
+    justify-content: center;
+    gap: 3.8rem;
+    grid-template-rows: 20rem 20rem 20rem;
+    grid-template-columns: 20rem 20rem 20rem;
+}
+img{
+  width: 20rem;
+  height: 20rem;
+  border-radius: 10px;
+  object-fit: cover;
+  position: relative;
+  filter: brightness(70%);
+}
+h4{
+  position: absolute;
+}
+
+ /* css style */
+body {
+  justify-content: center;
+}
+.box {
+  background: #444;
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 400ms;
+}
+.box:hover{
+  transform: scale(1.15);
+  transition-duration: 700ms;
+  
+}
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr; /* Définit trois colonnes de largeur égale */
+  }
+}
+@media (max-width: 767px) {
+  .game-board {
+    grid-template-columns: 1fr; /* Définit une colonne de largeur égale */
+  }
+}
+
+  .container2 {
+    display: grid;
+    grid-template-columns:repeat(5, 20rem); /* Deux colonnes de largeur égale */
+    grid-template-rows: repeat( 4, 20rem);
+    grid-gap: 20px; /* Espacement de 20 pixels entre les éléments */
+    margin: 20px;
+    justify-content: center;
+  }
+  
+  /* Style des éléments de la grille */
+  .item1{
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+    background-color: #555;
+  }
+  .item2{
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+    background-color: #1E4659;
+  }
+  .item3{
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+    background-color: #011c37;
+  }
+
+  .btn {
+    background: #011c37;
+    color: #15DEA5;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 1.85rem 3rem;
+    border-radius: 10rem;
+    transition : transform 400ms;
+    display: flex;
+    align-items: center;
+  }
+
+  /* MEDIA QUERIES Annule animations sur MOBILE*/
+  @media screen and (min-width: 700px) {
+    .btn:hover {
+      transform: scale(1.15);
+  }
+  }
+/* Animation Progress Bar */
+.progress{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 50%;
+  height: 3rem;
+  border: solid 0.5rem #003049;
+  border-radius: 10px;
+  padding: 0.3rem;
+}
+.progress-bar{
+  height: 100%;
+  width: 0px;
+  background-color: #15DEA5;
+  border-radius: 10px;
+  animation-name: progression;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes progression {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+    background-color: #003049;
+  }
+}

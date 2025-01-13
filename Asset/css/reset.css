@@ -1,0 +1,28 @@
+/* Reset du code navigateur par defaut */
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+button{
+    border-width: 1;
+    background-color: transparent;
+}
+
+input{
+    border-width: 1;
+    background-color: transparent;
+}

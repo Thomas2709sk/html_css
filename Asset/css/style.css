@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'Mclaren';
+    src: url(/Asset/fonts/McLaren-Regular.ttf);
+}
+@font-face {
+    font-family: 'Montserrat' ;
+    src: url(/Asset/fonts/Montserrat-Regular.ttf);
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    font-size: 2rem;
+    font-family: Montserrat;
+}
+.flux{
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Start header */
+.header{
+    width: 100%;
+    height: 6rem;
+    background-color: #003049;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    font-family: Mclaren;
+    color: white;
+    margin-left: 1rem;
+    width: 40%;
+}
+.header_nav{
+    font-family: Montserrat;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.header_list{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+}
+/* end header */
+li a{
+    color: white;
+}
+li a:hover{
+    color: red;
+}
+.hero_title{
+    font-size: 3.5rem;
+    font-family: Mclaren;
+    color: white;
+}
+
+h3{
+    text-align: center;
+    text-decoration: underline;
+    color: #ef233c;
+    font-size: 2.7rem;
+    font-family: Montserrat, sans-serif;
+}
+.hero{
+    width: 100%;
+    height: 60rem;
+    text-align: center;
+    padding: 2rem;
+    background-image: url(/Asset/images/bigtitle.jpg);
+    background-size: cover;
+    background-color: #0005;
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: bottom;
+}
+.hero_texte{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.hero_texte-left{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+    column-gap: 0.7rem;
+}
+.hero-bienvenue, .hero-histoire{
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-regions{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1rem;
+    background-color:#003049 ;
+    width: 100%;
+    padding: 2rem;
+    color: white;
+}
+.hero_photo{
+    border-radius: 1rem;
+    margin-top: 1rem;
+    object-fit: cover;
+    width: 34rem;
+    height: 25rem;
+    box-shadow: 1rem 0.5rem 0.5rem grey;
+}
+button{
+    border-radius: 1rem;
+    background-color: #C1121F;
+    color: white;
+    font-size: 2rem;
+    padding: 0.9rem;
+    margin-top: 1rem;
+}
+button:hover{
+    background-color: red;
+}
+.hero_search{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero_label{
+    display: flex;
+    color: white;
+    padding-top: 1rem;
+    font-style: oblique;
+}
+.hero_input{
+    font-size: 2rem;
+    color: white;
+    border-width: 1;
+    padding: 1rem;
+    background-size: cover;
+    background-color: #0005;
+    background-blend-mode: darken;
+}
+.hero_input::placeholder{
+    color: white;
+    opacity: 1;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 3rem;
+}
+
+.footer{
+        width: 100%;
+        height: 5rem;
+        background-color: #1E4659;
+        color: white;
+        font-family: Mclaren;
+        display: flex;
+        flex-direction: row;;
+        align-items: center;
+        justify-content: space-around;
+}
+.footer_list{
+    display: flex;
+    gap: 3rem;
+}
+
+
+@media (max-width: 600px) {
+    body{
+        font-size: 1.8rem;
+        display: grid;
+        align-items: center;
+    }
+    .header{
+        font-size: 1.8rem;
+    }
+    .logo{
+        width: 80%;
+    }
+    .header_nav{
+        display: none;
+    }
+    .header_list{
+        flex-direction: column;
+    }
+    .hero_texte{
+      display:grid;
+    }
+    .hero_texte-left{
+        display: grid;
+    }
+    .hero_photo{
+        box-shadow: none;
+        display: grid;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+    background-color: #FDF0D5;
+  }

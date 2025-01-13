@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leçon</title>
+    <link rel="stylesheet" href="./Asset/css/reset.css">
+    <link rel="stylesheet" href="./Asset/css/cours.css">
+</head>
+<body>
+    <header class="header">
+        <h2 class="logo">Découverte du Japon</h2>
+        <nav class="header_nav">
+            <ul class="header_list">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="carte.html">La carte</a></li>
+                <li><a href="regions.html">Les régions</a></li>
+                <li><a href="histoire.html">Son histoire</a></li>
+                <li><a href="compte.html">Mon compte</a></li>
+                <li><a href="cours.html">cours</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <section class="hero">
+        <h1 class="hero_title">Leçon</h1>
+     </section>
+     <h3>Tableau</h3>
+
+    <table class="flux">
+        <caption> Régions et Préfectures</caption>
+        <thead>
+        <tr>
+                <th></th>
+                <th colspan="3" scope="col">Préfectures du Tohoku</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+                <th rowspan="2" scope="row">Tohoku</th>
+                <td>Aomori</td>
+                <td>Iwate</td>
+                <td>Miyagi</td>
+        </tr>
+        <tr>
+            <td>Akita</td>
+            <td>Yamagata</td>
+            <td>Fukushima</td>
+        </tr>
+        <tr>
+            <th></th>
+            <th colspan="3">Prefecture du Chubu</th>
+        </tr>
+        <tr>
+            <th rowspan="3"> Chubu</th>
+            <td>Niigata</td>
+            <td>Toyama</td>
+            <td>Ishikawa</td>
+        </tr>
+        <tr>
+            <td>Fukui</td>
+            <td>Yamanashi</td>
+            <td>Nagano</td>
+        </tr>
+        <tr>
+            <td>Gifu</td>
+            <td>Shizuoka</td>
+            <td>Aichi</td>
+        </tr>
+        <tr>
+            <th></th>
+            <th colspan="3"> Prefecture du Kansai</th>
+        </tr>
+        </tbody>
+    </table>
+    <h3>Formulaires</h3>
+
+    <form action="" method="POST">
+        <div>
+            <label for="name">Nom :</label>
+            <input id="name" type="text" minlength="5">
+        </div><br/>
+        <div>
+            <label for="mail">E-mail :</label>
+            <input id="mail" type="email" required>
+        </div><br/>
+        <div>
+            <label for="pass">Mot de passe :</label>
+            <input id="pass" type="password" required>
+        </div><br/>
+        <input type="submit" value="Valider">
+    </form>
+
+    <select name="regions" id="">
+        <option value="">regions</option>
+        <option value="hokkaido">Hokkaido</option>
+        <option value="tohoku">Tohoku</option>
+            <optgroup label="Kanto">
+                <option value="Tokyo">Tokyo</option>
+            </optgroup>    
+    </select>
+
+    <h3>Grid</h3>
+    <details class="flux">
+        <summary>I have keys but no doors. I have space but no room. You can enter but can’t leave. What am I?</summary>
+        A keyboard.
+      </details>
+
+      <div class="container flux">
+        <!-- Élément de la colonne 1 -->
+        <div class="item">
+            Contenu de la colonne 1
+        </div>
+        
+        <!-- Élément de la colonne 2 -->
+        <div class="item">Contenu de la colonne 2</div>
+        <div class="item">Contenu de la colonne 3</div>
+        <div class="item">Contenu de la ligne 1</div>
+        <div class="item">Contenu de la ligne 1</div>
+        <div class="item">Contenu de la ligne 1</div>
+        <div class="item">Contenu de la ligne 2</div>
+        <div class="item">Contenu de la ligne 2</div>
+        <div class="item">Contenu de la ligne 2</div>
+      </div>
+
+      <div class="game-board">
+        <div class="box">
+            <img src="./Asset/images/bienvenue.jpg">
+            <h4><a href="hokkaido.html">Hokkaido</a></h4>
+        </div>
+        <div class="box">
+            <img src="./Asset/images/bienvenue.jpg">
+        </div>
+        <div class="box">200px x 200px</div>
+        <div class="box">200px x 200px</div>
+        <div class="box">200px x 200px</div>
+        <div class="box">200px x 200px</div>
+        <div class="box">200px x 200px</div>
+        <div class="box">200px x 200px</div>
+        <div class="box">200px x 200px</div>
+      </div>
+
+      <div class="container2 ">
+        <!-- Élément de la colonne 1 -->
+        <div class="item1">Contenu de la colonne 1</div>
+        
+        <!-- Élément de la colonne 2 -->
+        <div class="item2">Contenu de la colonne 2Le Japon est un archipel situé en Asie de l'Est,
+            composé de quatre îles principales : Honshu, Hokkaido, Kyushu et Shikoku, ainsi que de milliers d'îles plus petites. Ce pays est connu pour son mélange unique de traditions anciennes et de modernité.</div>
+        <div class="item3">Contenu de la colonne 3</div>
+      </div>
+<h3>Animations</h3>
+      <button class="btn" type="reset">animation</button>
+
+      <div class="progress">
+        <div class="progress-bar"></div>
+      </div>
+
+</main>
+<!-- Fin Main-->
+<!-- start Footer-->
+<footer class="footer">
+    <nav class="footer_nav">
+        <ul class="footer_list">
+            <li>Mentions legales</li>
+            <li>Contact</li>        
+            <li>A propos</li>
+            <li>Copyright</li>
+        </ul>
+    </nav>
+
+</footer>
+</body>
+</html>
